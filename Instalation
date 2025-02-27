@@ -1,0 +1,75 @@
+ Installation von MySQL (ZIP-Methode, kein Installer)
+Diese Methode erlaubt dir, MySQL ohne Installation zu verwenden, indem du es einfach entpackst und manuell konfigurierst.
+
+
+🟢 1. MySQL ZIP-Datei herunterladen
+🔹 Gehe zur offiziellen MySQL-Website:
+👉 https://dev.mysql.com/downloads/mysql/
+
+🔹 Scrolle nach unten und wähle "Windows (x86, 64-bit), ZIP Archive"
+🔹 Lade die ZIP-Datei herunter (z. B. mysql-8.0.34-winx64.zip).
+
+🟢 2. MySQL entpacken und konfigurieren
+2.1. ZIP entpacken
+1️⃣ Entpacke die ZIP-Datei an einen gewünschten Speicherort, z. B.:
+
+D:\Programme\MySQL\
+oder
+
+C:\mysql\
+2️⃣ Benenne den entpackten Ordner um (optional), z. B. mysql-8.0.
+
+2.2. Konfigurationsdatei my.ini erstellen
+1️⃣ Erstelle eine neue Datei mit dem Namen my.ini im MySQL-Ordner.
+2️⃣ Öffne die Datei mit einem Texteditor (z. B. Notepad++).
+3️⃣ Füge folgendes hinzu:
+
+[mysqld]
+basedir=D:/Programme/MySQL/mysql-8.0
+datadir=D:/Programme/MySQL/mysql-8.0/data
+port=3306
+🔹 Ersetze D:/Programme/MySQL/mysql-8.0 mit deinem tatsächlichen Speicherort.
+🔹 Falls der data-Ordner nicht existiert, erstelle ihn manuell.
+
+🟢 3. MySQL-Server initialisieren
+Jetzt musst du MySQL initialisieren, damit es eine Datenbankstruktur erstellt:
+
+1️⃣ Öffne die Eingabeaufforderung (cmd) als Administrator.
+2️⃣ Navigiere zum MySQL-Ordner:
+
+
+cd /d D:\Programme\MySQL\mysql-8.0\bin
+
+
+3️⃣ Führe die Initialisierung aus:
+
+
+mysqld --initialize-insecure --console
+🔹 --initialize-insecure bedeutet, dass kein Root-Passwort gesetzt wird.
+
+🟢 4. MySQL-Server starten
+1️⃣ Starte den MySQL-Server:
+
+
+mysqld --console
+🔹 Der Server läuft jetzt im Terminal und darf nicht geschlossen werden.
+
+ODER als Windows-Dienst registrieren:
+
+mysqld --install
+net start mysql
+🟢 5. MySQL-Konsole starten (ohne Passwort)
+Jetzt kannst du die MySQL-Konsole ohne Passwort öffnen:
+
+=
+mysql -u root
+Falls der Befehl nicht gefunden wird, füge bin zum PATH hinzu:
+1️⃣ Win + R → sysdm.cpl → Erweitert
+2️⃣ Umgebungsvariablen → Path → Bearbeiten
+3️⃣ Füge D:\Programme\MySQL\mysql-8.0\bin hinzu.
+
+
+✅ MySQL wurde als ZIP-Datei installiert – kein Installer nötig.
+✅ Der Server läuft aus einem beliebigen Ordner.
+✅ Die MySQL-Konsole kann ohne Passwort verwendet werden. 
+
