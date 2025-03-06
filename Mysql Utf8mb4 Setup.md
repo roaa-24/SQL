@@ -59,6 +59,6 @@ SHOW VARIABLES LIKE 'collation%';
 ### ✅ Erwartete Ergebnisse
 - `character_set_server` sollte auf **utf8mb4** gesetzt sein.
 - `collation_server` sollte auf **utf8mb4_unicode_ci** stehen.
-
+![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha3.png?raw=true)
 Mit dieser Konfiguration ist sichergestellt, dass MySQL alle Zeichen, inklusive Emojis und Sonderzeichen, korrekt verarbeitet.
 
