@@ -25,6 +25,7 @@ mysqld --console
 ![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha.png?raw=true)
 
 
+
 💡 Der Server läuft jetzt im Terminal und darf nicht geschlossen werden.
 
 ## 🔑 3. MySQL-Konsole starten (ohne Passwort)
