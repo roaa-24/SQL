@@ -8,8 +8,10 @@
 ## Datenbanken anzeigen und verwalten
 ```sql
 SHOW DATABASES; -- Zeigt alle vorhandenen Datenbanken an
-SHOW TABLES FROM rourou; -- Zeigt alle Tabellen der Datenbank 'rourou' an
+SHOW TABLES FROM cours_sql; -- Zeigt alle Tabellen der Datenbank 'cours_sql' an
 ```
+![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha4.png?raw=true)
+
 
 ## Datenbank erstellen
 ```sql
