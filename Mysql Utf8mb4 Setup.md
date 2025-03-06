@@ -35,7 +35,7 @@ mysqld --console
 ```sh
 mysql -u root
 ```
-
+![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha2.png?raw=true)
 Falls der Befehl nicht gefunden wird, füge das `bin`-Verzeichnis von MySQL zum `PATH` hinzu:
 
 1. ⚙️ Drücke `Win + R`, gib **sysdm.cpl** ein und bestätige mit **Enter**.
