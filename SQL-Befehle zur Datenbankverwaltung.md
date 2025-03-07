@@ -18,6 +18,7 @@ SHOW TABLES FROM cours_sql; -- Zeigt alle Tabellen der Datenbank 'cours_sql' an
 CREATE DATABASE IF NOT EXISTS 'datenbankname'; -- Erstellt eine Datenbank, falls sie noch nicht existiert
 USE test; -- Wechselt zur Datenbank 'test'
 ```
+![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha6.png?raw=true)
 
 ## Tabellen anzeigen und erstellen
 ```sql
@@ -29,7 +30,7 @@ CREATE TABLE rourou (
     userbirthday DATE
 );
 ```
-
+![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha7.png?raw=true)
 ## Tabellenstruktur anzeigen
 ```sql
 DESCRIBE Kunde; -- Zeigt die Struktur der Tabelle 'Kunde'
