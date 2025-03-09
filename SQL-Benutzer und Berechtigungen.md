@@ -19,7 +19,7 @@ Ein neuer Benutzer kann mit folgendem Befehl erstellt werden:
 ```sql
 CREATE USER 'benutzername'@'host' IDENTIFIED BY 'passwort';
 ```
-🖼 **Screenshot einfügen:** Benutzererstellung in SQL
+
 
 - `'benutzername'` ist der Name des Benutzers.
 - `'host'` gibt an, von wo aus sich der Benutzer anmelden darf (z. B. `'localhost'` für lokale Anmeldungen).
@@ -29,8 +29,7 @@ CREATE USER 'benutzername'@'host' IDENTIFIED BY 'passwort';
 Berechtigungen werden mit `GRANT` erteilt. Beispiele:
 ```sql
 GRANT SELECT, INSERT ON datenbankname.* TO 'benutzername'@'host';
-```
-🖼 **Screenshot einfügen:** Rechtevergabe in SQL
+![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha8.png?raw=true)
 
 - `SELECT, INSERT` erlaubt dem Benutzer das Lesen und Einfügen von Daten.
 - `datenbankname.*` bedeutet, dass diese Berechtigungen für alle Tabellen der angegebenen Datenbank gelten.
@@ -39,21 +38,21 @@ Vollzugriff auf eine Datenbank:
 ```sql
 GRANT ALL PRIVILEGES ON datenbankname.* TO 'benutzername'@'host';
 ```
-🖼 **Screenshot einfügen:** Vollzugriffsrechte vergeben
+
 
 ### 🚫 3.3 Berechtigungen entziehen
 Mit `REVOKE` können Rechte wieder entzogen werden:
 ```sql
 REVOKE INSERT ON datenbankname.* FROM 'benutzername'@'host';
 ```
-🖼 **Screenshot einfügen:** Berechtigungen entziehen
+
 
 ### ❌ 3.4 Benutzer löschen
 Einen Benutzer entfernen:
 ```sql
 DROP USER 'benutzername'@'host';
 ```
-🖼 **Screenshot einfügen:** Benutzer löschen
+![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha8.png?raw=true)
 
 ---
 
