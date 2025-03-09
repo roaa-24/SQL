@@ -32,8 +32,8 @@ Zeige alle Spiele, die nicht "Minecraft" heißen:
 ```sql
 SELECT * FROM sp_spiele WHERE spiel_name != 'Minecraft';
 ```
+![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha10.png?raw=true)
 
-     ![Captcha](https://github.com/roaa-24/SQL/blob/main/captcha10.png?raw=true)
 ### 2.3 Größer als (`>`)
 Zeige alle Spiele, deren Preis über 30 liegt:
 ```sql
