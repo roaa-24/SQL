@@ -4,7 +4,7 @@ In MySQL (über die Kommandozeile)
 
 Öffne die MySQL-Konsole und melde dich an:
 
-```sql
+```sql1
 mysql -u root -p
 ```
 
